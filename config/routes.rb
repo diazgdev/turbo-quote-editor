@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  Rails.application.routes.draw do
-    resources :quotes
-  end
+  root 'pages#home'
+  resources :quotes
+  devise_for :users
 end
